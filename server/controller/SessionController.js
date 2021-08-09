@@ -3,7 +3,7 @@ import SessionInfo from "../model/session";
 class SessionController {
 
 
-    static sessionRequest = async (req, res) => {
+    static sessionRequest = async (req,res) => {
         const session = await SessionInfo.create(req.body);
 
         if (!session) {
