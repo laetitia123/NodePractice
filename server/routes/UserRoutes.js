@@ -16,6 +16,8 @@ userRoute.get("/all",UserController.getAllUsers);
 userRoute.get("/:id",UserController.getOneUser);
 userRoute.patch("/:id",UserController.updateOneUser);
 userRoute.delete("/:id",UserController.deleteOneUser);
+userRoute.patch("/:id/role",UserController.updateOneUserRole);
+userRoute.post("/signin", UserController.signinUser);
 
 
 
@@ -23,3 +25,4 @@ userRoute.delete("/:id",UserController.deleteOneUser);
 
 
 export default userRoute;
+

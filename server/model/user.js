@@ -28,7 +28,9 @@ const UserSchema = new mongoose.Schema({
         default:"active"
     }
 });
-const UserInfos = mongoose.model("user" ,UserSchema);
+
+
+const UserInfos = mongoose.model("User" ,UserSchema);
 
 
 export default UserInfos;
